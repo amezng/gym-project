@@ -1,0 +1,165 @@
+.fitnessTrainerSection {
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fitnessTrainerSection h4 {
+    font-size: 1.2rem;
+    color: #e1193e;
+}
+
+.fitnessTrainerSection h1 {
+    font-size: 3rem;
+    color: #011f39;
+}
+
+.fitnessTrainerSection h1 span {
+    color: #e1193e;
+}
+
+.trainersProfile {
+    height: 400px;
+    width: 1190px;
+}
+
+.trainersProfile>img:first-child {
+    position: absolute;
+    z-index: -10;
+    left: 0px;
+    height: 450px;
+    width: 1190px;
+}
+
+.trainerImg {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 400px;
+
+}
+
+.trainerImg img {
+    position: relative;
+    left: 50px;
+    height: 350px;
+    top: 103px;
+    transition: all 0.4s ease;
+    transform: translateX(0px);
+}
+
+.imgActive:hover {
+    cursor: pointer;
+    transform: translateX(-50px);
+}
+
+.imgInActive:hover {
+    margin-left: 0px;
+}
+
+
+
+
+
+
+.trainerNames h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    width: 120px;
+    border: 1px dotted #fff;
+    padding: 0px 10px;
+    transform: skew(10deg);
+
+}
+
+.nameInActive {
+    position: relative;
+    top: -100px;
+    border: 1px solid;
+    right: -120px;
+    width: 160px;
+    padding-top: 10px;
+    text-align: right;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1425af;
+    transition: all 0.4s ease;
+    transform: translateX(0px);
+    z-index: -1;
+    -webkit-transform:
+        skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    opacity: 0;
+}
+
+.nameActive {
+    position: relative;
+    top: -100px;
+    border: 1px solid;
+    right: -170px;
+    width: 160px;
+    padding-top: 10px;
+    text-align: right;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1425af;
+    transition: all 0.4s ease;
+    transform: translateX(0px);
+    opacity: 1;
+    -webkit-transform:
+        skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    z-index: -1;
+}
+
+@media only screen and (max-width: 415px) {
+    .fitnessTrainerSection {
+        width: 400px;
+    }
+
+    .trainersProfile {
+        height: 1400px;
+        width: 400px;
+    }
+
+    .trainersProfile>img:first-child {
+        display: none;
+    }
+
+    .trainerImg img {
+        height: 280px;
+        left: 0px;
+
+    }
+
+    .trainerImg {
+        flex-direction: column;
+        height: 250px;
+        gap: 10px;
+
+    }
+
+    .nameInActive {
+        opacity: 1;
+        top: 60px;
+        z-index: 10;
+        right: -10px;
+
+    }
+
+    .nameActive {
+        top: 60px;
+        right: -50px;
+
+    }
+}

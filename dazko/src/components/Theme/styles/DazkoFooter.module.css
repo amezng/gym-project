@@ -1,0 +1,115 @@
+.footerSection {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px 20px;
+    height: 100%;
+    width: 100%;
+    background-color: #030513;
+}
+
+.footerSection>div:first-child h4 {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: -10px;
+}
+
+.footerSection>div:first-child>div {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #e1193e;
+    margin-bottom: 30px;
+}
+
+.footerSection>div:first-child p {
+    font-size: 1.5rem;
+    width: 400px;
+    color: #cfcecf;
+}
+
+.footerSection>div:nth-child(2),
+.footerSection>div:nth-child(3) {
+    margin-top: 20px;
+}
+
+.footerSection>div:nth-child(2) h4,
+.footerSection>div:nth-child(3) h4 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.footerSection>div:nth-child(2)>div:last-child,
+.footerSection>div:nth-child(3)>div:last-child {
+    margin-top: 55px;
+    font-size: 1.4rem;
+
+
+}
+
+.footerSection>div:nth-child(2)>div:last-child>div {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #cfcecf;
+    width: 200px;
+
+}
+
+.footerSection>div:nth-child(3)>div:last-child>div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #cfcecf;
+
+}
+
+.footerSection>div:nth-child(3)>div:last-child>div span {
+    color: #e1193e;
+}
+
+.footerSection>div:nth-child(3)>div:last-child>div:first-child {
+    display: flex;
+    align-items: flex-start;
+    width: 150px;
+}
+
+.footerSection>div:last-child {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.footerSection>div:last-child img {
+    height: 80px;
+    width: auto;
+    object-fit: cover center;
+}
+
+@media only screen and (max-width: 415px) {
+    .footerSection {
+        flex-direction: column;
+    }
+
+    .footerSection>div:first-child p {
+        font-size: 1.2rem;
+        width: 350px;
+    }
+
+    .footerSection>div:last-child {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .footerSection>div:last-child img {
+        width: 380px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+}

@@ -1,0 +1,94 @@
+.scheduleSection {
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scheduleSection .headerContent {
+    text-align: center;
+}
+
+.scheduleSection .headerContent h4 {
+    font-size: 1.5rem;
+}
+
+.scheduleSection .headerContent h1 {
+    font-size: 2.5rem;
+    color: #011f39;
+}
+
+.scheduleSection div:first-child h1 span {
+    color: #e1193e;
+}
+
+.scheduleSection>div:nth-child(2) {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    background-color: #1425af;
+    color: #fff;
+}
+
+.scheduleSection>div:nth-child(2)>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 80px;
+}
+
+.scheduleSection>div:last-child {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.scheduleSection>div:last-child>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 140px;
+
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.scheduleSection>div:last-child>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border: 1px solid #dcdbdb96;
+}
+
+.timeRow {
+    background-color: #e1193e;
+    color: #fff;
+}
+
+.tueThuSatRow {
+    background-color: #eceffa;
+}
+
+@media only screen and (max-width: 415px) {
+    .scheduleSection {
+        align-items: flex-start;
+        overflow: scroll;
+    }
+
+    .headerContent {
+        margin-left: 45px;
+    }
+
+    .headerContent h1 {
+        font-size: 1.5rem;
+    }
+
+
+}

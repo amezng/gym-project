@@ -1,0 +1,170 @@
+.formSection {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.formSection>div:first-child {
+    height: 100%;
+    position: absolute;
+    z-index: -10;
+}
+
+.formSection>div:first-child img {
+    height: 100%;
+
+}
+
+.formContent {
+    position: relative;
+    z-index: 10;
+    padding: 40px 20px;
+    top: 80px;
+}
+
+.formContent h3 {
+    font-size: 1.2rem;
+    color: #e1193e;
+
+}
+
+.formContent h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.formContent h1 span {
+    color: #e1193e;
+}
+
+.standardBtn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.standardBtn>Button {
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 0px;
+    height: 50px;
+    width: 150px;
+}
+
+.standardBtn>Button:first-child {
+    background-color: #1425af;
+}
+
+.standardBtn>Button:last-child {
+    background-color: #e1193e;
+
+}
+
+.formContainer {
+    padding: 40px 20px;
+    border: 1px solid;
+    width: 600px;
+    height: 330px;
+    background-color: #0a113f;
+}
+
+.formContainer h4 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.heightInput {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.formContainer Button:hover,
+.standardBtn>Button:hover {
+    color: #fff !important;
+}
+
+.heightItem {
+    height: 50px;
+    width: 250px;
+    border-radius: 0px;
+    border: 1px solid gray;
+    background-color: #0a113f;
+}
+
+.weightItem {
+    width: 520px;
+    height: 50px;
+    border-radius: 0px;
+    border: 1px solid gray;
+    background-color: #0a113f;
+}
+
+.heightItem:hover,
+.weightItem:hover {
+    border: 1px solid gray;
+
+}
+
+.heightItem::placeholder,
+.weightItem::placeholder {
+    color: #ABADBB;
+}
+
+.computeBtn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.computeBtn>Button {
+    width: 250px;
+    height: 50px;
+    border-radius: 0px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+
+}
+
+.computeBtn>Button:first-child {
+    background-color: #e1193e;
+    color: #fff;
+}
+
+.computeBtn>Button:last-child {
+    background-color: #0a113f;
+    border: 1px solid #e1193e;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #e1193e;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.computeBtn>Button:last-child:hover {
+    color: #e1193e !important;
+    border: 1px solid #e1193e !important;
+
+}
+
+@media only screen and (max-width: 415px) {
+    .formSection>div:first-child img {
+        width: 415px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .formContainer {
+        width: 380px;
+    }
+
+    .heightItem,
+    .weightItem {
+        width: 100%;
+    }
+}

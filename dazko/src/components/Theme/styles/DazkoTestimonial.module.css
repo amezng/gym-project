@@ -1,0 +1,113 @@
+.testimonialSection {
+    position: relative;
+    z-index: -10;
+    padding: 50px 0px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f4f7;
+
+}
+
+.testimonialSection h4 {
+    font-size: 1.2rem;
+    color: #e1193e;
+}
+
+.testimonialSection h1 {
+    font-size: 3rem;
+    color: #011f39;
+    margin-bottom: 40px;
+}
+
+.carouselContainer {
+
+    width: 900px;
+    height: 150px;
+}
+
+.carouselWrapper {
+
+
+    display: flex !important;
+    gap: 20px;
+}
+
+.profileConatiner {
+    border: none;
+    width: 280px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.profileConatiner>p {
+    margin-top: 20px;
+    width: 250px;
+    text-align: center;
+    color: gray;
+
+}
+
+.profileConatiner img {
+    height: 80px;
+    width: 80px;
+
+}
+
+.profileConatiner>div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profileConatiner>div:last-child h3 {
+    color: #011f39;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.profileConatiner>div:last-child p {
+    color: #e1193e;
+}
+
+.headerComa {
+    height: 60px;
+    width: 60px;
+    background-color: #e1193e;
+    -webkit-transform:
+        skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    position: relative;
+    left: 120px;
+    top: 30px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerComa img {
+    height: 20px;
+    width: 20px;
+
+}
+
+.responsiveCarouselContainer {
+    display: none;
+}
+
+@media only screen and (max-width: 415px) {
+    .carouselContainer {
+        display: none;
+    }
+
+    .responsiveCarouselContainer {
+        padding-left: 60px;
+        width: 400px;
+        height: 150px;
+        display: block;
+    }
+}
