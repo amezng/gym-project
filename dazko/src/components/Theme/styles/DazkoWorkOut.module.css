@@ -29,8 +29,8 @@
 }
 
 .workOutSection>div:nth-child(3)>div {
-    height: 300px;
-    width: 300px;
+    height: 370px;
+    width: 370px;
     border: 1px solid;
 }
 
@@ -39,11 +39,13 @@
 }
 
 .workOutClasses img {
-    height: 300px;
-    width: 300px;
+    height: 370px;
+    width: 370px;
     position: absolute;
     z-index: -10;
-    object-fit: cover center;
+    object-fit: cover;
+    object-position: center;
+
 }
 
 .workOutClassesDescription {
@@ -51,7 +53,7 @@
     background-color: #000;
     color: #fff;
     position: relative;
-    top: 260px;
+    top: 330px;
     padding: 10px;
     width: 200px;
     display: flex;
@@ -67,16 +69,14 @@
 
 .workOutClassesPrice {
     position: relative;
-    left: 240px;
+    left: 310px;
     background-color: #1425af;
     color: #fff;
     width: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* transition: all 0.3s ease; */
     transform: translateX(60px);
-    /* display: none; */
 }
 
 .priceActive {
@@ -97,6 +97,7 @@
 .workOutSection a {
     color: #e1193e;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 415px) {
@@ -123,5 +124,6 @@
     .workOutSection a {
         font-weight: 600;
         letter-spacing: 2px;
+        font-size: 1.2rem;
     }
 }

@@ -6,11 +6,11 @@ import DazkoAbout from '../../components/Theme/DazkoAbout';
 import DazkoJoinUs from '../../components/Theme/DazkoJoinUs';
 import DazkoWorkOut from '../../components/Theme/DazkoWorkOut';
 import DazkoPricing from '../../components/Theme/DazkoPricing';
-import DazkoFitnessSchedules from '../../components/Theme/DazkoFitnessSchedules';
 import DazkoTrainer from '../../components/Theme/DazkoTrainer';
 import DazkoTestimonial from '../../components/Theme/DazkoTestimonial';
 import DazkoForm from '../../components/Theme/DazkoForm';
 import DazkoFooter from '../../components/Theme/DazkoFooter';
+import DazkoStories from '../../components/Theme/DazkoStories';
 
 export default function Hello() {
     return (
@@ -22,7 +22,7 @@ export default function Hello() {
                 <DazkoJoinUs />
                 <DazkoWorkOut />
                 <DazkoPricing />
-                <DazkoFitnessSchedules />
+                <DazkoStories />
                 <DazkoTrainer />
                 <DazkoTestimonial />
                 <DazkoForm />
