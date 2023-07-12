@@ -4,8 +4,20 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import DazkoHero from '../components/Theme/DazkoHero';
+import DazkoAbout from '../components/Theme/DazkoAbout';
+import DazkoJoinUs from '../components/Theme/DazkoJoinUs';
+import DazkoWorkOut from '../components/Theme/DazkoWorkOut';
+import DazkoPricing from '../components/Theme/DazkoPricing';
+import DazkoTrainer from '../components/Theme/DazkoTrainer';
+import DazkoTestimonial from '../components/Theme/DazkoTestimonial';
+import DazkoForm from '../components/Theme/DazkoForm';
+import DazkoFooter from '../components/Theme/DazkoFooter';
+import DazkoStories from '../components/Theme/DazkoStories';
+
 
 import styles from './index.module.css';
+
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -34,7 +46,19 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       {/* <HomepageHeader /> */}
       <main>
-        {/* <HomepageFeatures /> */}
+        <div>
+          <DazkoHero />
+          <DazkoAbout />
+          <DazkoJoinUs />
+          <DazkoWorkOut />
+          <DazkoPricing />
+          <DazkoStories />
+          <DazkoTrainer />
+          <DazkoTestimonial />
+          <DazkoForm />
+          <DazkoFooter />
+
+        </div>
       </main>
     </Layout>
   );

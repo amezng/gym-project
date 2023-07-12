@@ -15,8 +15,7 @@ import DazkoStories from '../../components/Theme/DazkoStories';
 export default function Hello() {
     return (
         <Layout title="Hello" description="Hello React Page">
-            <div
-            >
+            <div>
                 <DazkoHero />
                 <DazkoAbout />
                 <DazkoJoinUs />
