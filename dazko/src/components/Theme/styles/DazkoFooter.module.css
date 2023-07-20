@@ -1,12 +1,26 @@
+.footerSectionContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #030513;
+
+}
+
 .footerSection {
     position: relative;
     display: flex;
     align-items: flex-start;
-    gap: 20px;
-    padding: 40px 20px;
+    gap: 10px;
+    padding: 40px;
     height: 100%;
-    width: 100%;
-    background-color: #030513;
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
 .footerSection>div:first-child h4 {
@@ -23,8 +37,8 @@
 }
 
 .footerSection>div:first-child p {
-    font-size: 1.5rem;
-    width: 400px;
+    font-size: 1.3rem;
+    width: 350px;
     color: #cfcecf;
 }
 
@@ -36,13 +50,13 @@
 .footerSection>div:nth-child(2) h4,
 .footerSection>div:nth-child(3) h4 {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .footerSection>div:nth-child(2)>div:last-child,
 .footerSection>div:nth-child(3)>div:last-child {
     margin-top: 55px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
 
 }
@@ -86,9 +100,11 @@
 
 .footerSection>div:last-child img {
     height: 80px;
-    width: auto;
-    object-fit: cover center;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
 }
+
 
 @media only screen and (max-width: 415px) {
     .footerSection {

@@ -12,7 +12,7 @@ const DazkoForm = () => {
             <div className={styles.formContent}>
                 <h3>GET YOUR BODY MAX INDEX</h3>
                 <h1>WHAT IS YOUR <span>BMI</span></h1>
-                <div className={styles.standardBtn}><Button>standard</Button><Button>Metric</Button> </div>
+                <div className={styles.standardBtn}><Button>Standard</Button><Button>Metric</Button> </div>
                 <div className={styles.formContainer}>
                     <Form layout='vertical'>
                         <h4>YOUR HEIGHT</h4>

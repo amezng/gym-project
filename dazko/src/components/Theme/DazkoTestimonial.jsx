@@ -61,7 +61,7 @@ const DazkoTestimonial = () => {
                     <div className={`${styles.carouselWrapper} `}>
                         {carouselDetail.map((profile, i) => {
                             return (
-                                <div>
+                                <div className={styles.carouselProWraper}>
                                     <div className={styles.headerComa}><img src="../..//img/dazko-img/213175_f10d_icon.png" alt="" /></div>
                                     <div key={i} className={`${styles.profileConatiner} `}>
 
@@ -81,7 +81,7 @@ const DazkoTestimonial = () => {
                     <div className={`${styles.carouselWrapper} `}>
                         {carouselDetail.map((profile, i) => {
                             return (
-                                <div>
+                                <div className={styles.carouselProWraper}>
                                     <div className={styles.headerComa}><img src="../..//img/dazko-img/213175_f10d_icon.png" alt="" /></div>
                                     <div key={i} className={`${styles.profileConatiner} `}>
 

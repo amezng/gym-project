@@ -45,18 +45,18 @@ const DazkoPricing = () => {
 
     const features = [
         {
-            img: "../..//img/dazko-img/001-fitness.svg",
+            img: "../..//img/dazko-img/pro-icon-1.png",
             head: "THOUSANDS OF EQUIPMENTS",
             para: "A small river named Duden flows by their place and supplies it with the necessary regelialia. "
         },
         {
-            img: "../..//img/dazko-img/002-treadmill.svg",
+            img: "../..//img/dazko-img/pro-icon-2.png",
             head: "OPEN 24/7 DAZKO GYM FITNESS",
             para: "A small river named Duden flows by their place and supplies it with the necessary regelialia."
 
         },
         {
-            img: "../..//img/dazko-img/003-vip-card.svg",
+            img: "../..//img/dazko-img/pro-icon-3.png",
             head: " FOOD SUPPLEMENTS",
             para: "A small river named Duden flows by their place and supplies it with the necessary regelialia.."
 
@@ -79,22 +79,24 @@ const DazkoPricing = () => {
                                     </div>
                                 )
                             })}
-                            <Button>GET STARTED</Button>
+                            <div className={styles.pricing_btn}>
+                                <Button>GET STARTED</Button></div>
                         </div>
                     )
                 })}
 
             </div>
-            <div className={styles.featureContainer}>
-                {features.map((feature, i) => {
-                    return (
-                        <div className={styles.features} key={i}>
-
-                            <h2><span><img src={feature.img} alt="" /></span>{feature.head} </h2>
-                            <p>{feature.para} </p>
-                        </div>
-                    )
-                })}
+            <div className={styles.featureWrapper}>
+                <div className={styles.featureContainer}>
+                    {features.map((feature, i) => {
+                        return (
+                            <div className={styles.features} key={i}>
+                                <h2><span><img src={feature.img} alt="" /></span>{feature.head} </h2>
+                                <p>{feature.para} </p>
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
         </section>
     )

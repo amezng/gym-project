@@ -46,19 +46,19 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       {/* <HomepageHeader /> */}
       <main>
-        <div>
-          <DazkoHero />
-          <DazkoAbout />
-          <DazkoJoinUs />
-          <DazkoWorkOut />
-          <DazkoPricing />
-          <DazkoStories />
-          <DazkoTrainer />
-          <DazkoTestimonial />
-          <DazkoForm />
-          <DazkoFooter />
 
-        </div>
+        <DazkoHero />
+        <DazkoAbout />
+        <DazkoJoinUs />
+        <DazkoWorkOut />
+        <DazkoPricing />
+        <DazkoStories />
+        <DazkoTrainer />
+        <DazkoTestimonial />
+        <DazkoForm />
+        <DazkoFooter />
+
+
       </main>
     </Layout>
   );

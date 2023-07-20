@@ -1,8 +1,9 @@
 .fitnessTrainerSection {
-    margin: 50px 0px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .fitnessTrainerSection h4 {
@@ -21,32 +22,36 @@
 
 .trainersProfile {
     height: 400px;
-    width: 1190px;
+    width: 100%;
 }
 
 .trainersProfile>img:first-child {
     position: absolute;
     z-index: -10;
     left: 0px;
-    height: 450px;
+    height: 400px;
     width: 100%;
 }
 
 .trainerImg {
+    width: 1190px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     height: 400px;
 
 }
 
 .trainerImg img {
     position: relative;
-    left: 50px;
-    height: 350px;
-    top: 103px;
+    left: -10px;
+    height: 400px;
+    width: auto;
+    top: 25px;
     transition: all 0.4s ease;
     transform: translateX(0px);
+
 }
 
 .imgActive:hover {
@@ -76,9 +81,9 @@
 
 .nameInActive {
     position: relative;
-    top: -100px;
+    top: -200px;
     border: 1px solid;
-    right: -120px;
+    right: -160px;
     width: 160px;
     padding-top: 10px;
     text-align: right;
@@ -100,9 +105,9 @@
 
 .nameActive {
     position: relative;
-    top: -100px;
+    top: -200px;
     border: 1px solid;
-    right: -170px;
+    right: -130px;
     width: 160px;
     padding-top: 10px;
     text-align: right;

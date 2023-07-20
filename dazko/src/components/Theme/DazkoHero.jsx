@@ -60,46 +60,6 @@ export default function DazkoHero() {
                     <div>MENU</div>
                 </div>
             </div>
-
-            {/* <div className={`${styles.responsiveTabContainer} `}>
-                <div>
-                    <div>
-                        <Tabs tabPosition="left" tabBarStyle={{ color: '#fff', fontWeight: '600', fontSize: '1.2rem' }}>
-                            {tabs.map((tab, i) => {
-                                return (
-
-                                    <Tabs.TabPane key={i} tab={tab}></Tabs.TabPane>
-
-                                )
-                            })}
-
-                        </Tabs>
-
-                    </div>
-                    <span className={styles.memberBtn}><Button>BECOME A MEMBER</Button></span>
-                </div>
-            </div> */}
-
-            <div className={`${styles.carouselContainer} carousel-container`}>
-                <Carousel autoplay>
-                    {carousellImg.map((carousel, i) => {
-                        return (
-                            <div key={i}>
-                                <div className={styles.backgroundImg}>
-                                    <Image preview={false} className={styles.bgImage} src={carousel.img} height={600} width={'100%'} />
-                                </div>
-                                <div className={styles.heroDescriptionsBg}>
-                                    <div className={styles.heroDescriptions}>
-                                        <h1>{carousel.header}</h1>
-                                        <p>{carousel.para}</p>
-                                        <Button type="primary">{carousel.button} <RightOutlined /></Button>
-                                    </div>
-                                </div>
-                            </div>
-                        )
-                    })}
-                </Carousel>
-            </div>
             <div className={styles.headerContent}>
                 <div>Fee call <span>+1 234 456 78910</span></div>
                 <div>
@@ -134,6 +94,28 @@ export default function DazkoHero() {
                     </div>
                     <span className={styles.memberBtn}><Button>BECOME A MEMBER</Button></span>
                 </div>
+            </div>
+
+
+            <div className={`${styles.carouselContainer} carousel-container`}>
+                <Carousel >
+                    {carousellImg.map((carousel, i) => {
+                        return (
+                            <div key={i} className={styles.carousel_item_wrapper}>
+                                <div className={styles.backgroundImg}>
+                                    <Image preview={false} className={styles.bgImage} src={carousel.img} height={'100%'} width={'100%'} />
+                                </div>
+                                <div className={styles.heroDescriptionsBg}>
+                                    <div className={styles.heroDescriptions}>
+                                        <h1>{carousel.header}</h1>
+                                        <p>{carousel.para}</p>
+                                        <Button type="primary">{carousel.button} <RightOutlined /></Button>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </Carousel>
             </div>
 
 
