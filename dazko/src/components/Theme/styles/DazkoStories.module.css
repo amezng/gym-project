@@ -76,12 +76,14 @@
     .videoContainer>div,
     .videoContainer>div img {
         border-radius: 8px;
-        width: 350px;
+        width: 100%;
         height: 350px;
     }
 
     .storiesContainer {
-        width: 415px;
+
+        padding: 0px 10px;
+        width: 100%;
         margin-bottom: 700px;
     }
 

@@ -144,12 +144,11 @@
 
   .carousel-container {
     .slick-dots {
-      width: 400px;
+      width: 100%;
       flex-direction: column;
       justify-content: center;
       position: absolute;
-      top: 550px;
-      margin-left: 350px;
+      top: 850px;
 
     }
 
@@ -174,7 +173,7 @@
     .slick-dots {
       position: relative;
       top: 40px;
-      left: -30px;
+
     }
 
   }
@@ -184,7 +183,10 @@
       flex-direction: column;
       align-items: flex-start;
       padding-left: 10px;
+      /* position: relative; */
+      left: -10px;
       padding-top: 10px;
+
     }
 
     .ant-tabs .ant-tabs-tab+.ant-tabs-tab {

@@ -1,4 +1,5 @@
 .fitnessTrainerSection {
+    height: 100%;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -21,7 +22,7 @@
 }
 
 .trainersProfile {
-    height: 400px;
+    height: 100%;
     width: 100%;
 }
 
@@ -29,7 +30,7 @@
     position: absolute;
     z-index: -10;
     left: 0px;
-    height: 400px;
+    height: 100%;
     width: 100%;
 }
 
@@ -129,11 +130,12 @@
 
 @media only screen and (max-width: 415px) {
     .fitnessTrainerSection {
-        width: 400px;
+        height: 100%;
+        width: 100%;
     }
 
     .trainersProfile {
-        height: 1400px;
+        height: 100%;
         width: 400px;
     }
 
@@ -142,23 +144,25 @@
     }
 
     .trainerImg img {
-        height: 280px;
+        height: 100%;
         left: 0px;
 
     }
 
     .trainerImg {
+        width: 100%;
         flex-direction: column;
-        height: 250px;
+        height: 100%;
         gap: 10px;
 
     }
 
     .nameInActive {
+        width: 60%;
         opacity: 1;
-        top: 60px;
+        top: 0px;
         z-index: 10;
-        right: -10px;
+        right: -90px;
 
     }
 
@@ -166,5 +170,14 @@
         top: 60px;
         right: -50px;
 
+    }
+
+    .trainerNames h3 {
+        width: 60%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

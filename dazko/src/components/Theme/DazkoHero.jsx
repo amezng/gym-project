@@ -13,7 +13,7 @@ export default function DazkoHero() {
         header: "SHAPE YOUR PERFECT BODY",
         para: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
         button: "TAKE A TOUR NOW",
-        img: "../..//img/dazko-img/bg_1.jpg.webp"
+        img: "../..//img/dazko-img/bg_3.jpg.webp"
     },
     {
         header: "INCREASE YOUR MUSCLE POWER",
@@ -25,7 +25,7 @@ export default function DazkoHero() {
         header: "YOU ONLY FAIL, WHEN YOU STOP TRYING",
         para: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
         button: "TAKE A TOUR NOW",
-        img: "../..//img/dazko-img/bg_3.jpg.webp"
+        img: "../..//img/dazko-img/bg_1.jpg.webp"
     },
     ]
     const tabs = ["HOME",
@@ -98,7 +98,7 @@ export default function DazkoHero() {
 
 
             <div className={`${styles.carouselContainer} carousel-container`}>
-                <Carousel >
+                <Carousel autoplay>
                     {carousellImg.map((carousel, i) => {
                         return (
                             <div key={i} className={styles.carousel_item_wrapper}>

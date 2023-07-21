@@ -30,7 +30,7 @@ const DazkoFooter = () => {
                     <div>CROSSFIT & FITNESS</div>
                     <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                 </div>
-                <div>
+                <div className={styles.exploreContainer}>
                     <h4>Explore</h4>
                     <div>
                         {explores.map((explore, i) => {

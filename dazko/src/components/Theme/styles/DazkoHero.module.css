@@ -206,7 +206,7 @@
     height: 2px;
     background-color: red;
     top: 30px;
-    left: 200px;
+    left: 50px;
     background: linear-gradient(to right, rgba(210, 227, 238, 0) 0%, #e1193e 100%);
     width: 700px;
 
@@ -241,7 +241,6 @@
         align-items: center;
         justify-content: space-between;
         background-color: #000;
-        position: relative;
         z-index: 10;
     }
 
@@ -280,8 +279,10 @@
     }
 
     .tabTopBorder {
-        width: 400px;
+        position: absolute;
+        width: 100%;
         left: 0px;
+        top: 62px;
 
     }
 
@@ -289,7 +290,6 @@
         position: absolute;
         z-index: 5;
         padding: 0px;
-
         margin-top: 10px;
         background-color: #000;
         width: 100%;
@@ -303,14 +303,17 @@
     }
 
     .tabContainer>div:nth-child(2) {
-
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         font-size: 1rem;
+        left: -120px;
+
     }
 
     .memberBtn Button {
+        /* position: relative;*/
         height: 40px;
         width: 150px;
         font-size: 0.8rem;
@@ -319,13 +322,13 @@
         -moz-transform: skewX(0deg);
         -ms-transform: skewX(0deg);
         transform: skewX(0deg);
-        margin-left: 10px;
+        margin-left: -5px;
     }
 
     .carouselContainer {
         top: 0px;
         bottom: 0px;
-        height: 600px;
+        height: 100%;
         width: 415px;
     }
 
@@ -349,13 +352,13 @@
     }
 
     .heroDescriptions h1 {
-        font-size: 2rem;
-        width: 200px;
+        font-size: 40px;
+        width: 100%;
     }
 
     .heroDescriptions p {
-        font-size: 1.2rem;
-        width: 300px;
+        font-size: 1.4rem;
+        width: 100%;
     }
 
     .bgImage {
