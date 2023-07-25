@@ -73,7 +73,14 @@
         flex-direction: column;
     }
 
+    .storiesContainer h1 {
+        text-align: center;
+        width: 100%;
+    }
+
     .storiesContainer h4 {
+        width: 100%;
+        text-align: center;
         margin-top: 40px;
     }
 

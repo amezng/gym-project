@@ -113,6 +113,12 @@
         display: none;
     }
 
+    .testimonialSection h4,
+    .testimonialSection h1 {
+        width: 100%;
+        text-align: center;
+    }
+
     .responsiveCarouselContainer {
         max-width: 1200px;
         margin: 0 auto;

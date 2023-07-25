@@ -85,7 +85,13 @@
 @media only screen and (max-width: 415px) {
     .dazkoJoinUsSections h1 {
         font-size: 2.4rem;
+        text-align: center;
         width: 100%;
+    }
+
+    .dazkoJoinUsSections h4 {
+        width: 100%;
+        text-align: center;
     }
 
     .joinUsFeatures {

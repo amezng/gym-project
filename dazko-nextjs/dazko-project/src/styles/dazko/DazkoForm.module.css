@@ -169,7 +169,7 @@
 
 @media only screen and (max-width: 415px) {
     .formSection>div:first-child img {
-        width: 415px;
+        width: 100%;
         object-fit: cover;
         object-position: center;
     }
