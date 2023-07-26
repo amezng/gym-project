@@ -109,7 +109,7 @@ export default function DazkoHero() {
                         return (
                             <div key={i} className={styles.carousel_item_wrapper}>
                                 <div className={styles.backgroundImg}>
-                                    <img alt="" preview={false} className={styles.bgImage} src={carousel.img} height={'100%'} width={'100%'} />
+                                    <img alt="" className={styles.bgImage} src={carousel.img} height={'100%'} width={'100%'} />
                                 </div>
                                 <div className={styles.heroDescriptionsBg}>
                                     <div className={styles.heroDescriptions}>
