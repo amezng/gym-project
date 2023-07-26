@@ -1,13 +1,14 @@
 import React from 'react';
-import { Button, Form, Input, Space } from 'antd';
-import { TwitterOutlined, FacebookOutlined, InstagramOutlined, ArrowRightOutlined } from "@ant-design/icons";
+import Image from 'next/image'
+
+import { Button, Form, Input } from 'antd';
 import styles from '../../styles/dazko/DazkoForm.module.css'
 
 const DazkoForm = () => {
     return (
         <section className={styles.formSection}>
             <div>
-                <img src=" ../..//img/dazko-img/bg_4.jpg.webp" alt="" />
+                <img src=" /img/dazko-img/bg_4.jpg.webp" alt="" />
             </div>
             <div className={styles.formContent}>
                 <h3>GET YOUR BODY MAX INDEX</h3>

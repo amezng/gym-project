@@ -1,7 +1,9 @@
 import React from "react"
+import Image from 'next/image'
+
 import styles from '../../styles/dazko/DazkoPricing.module.css'
-import { Carousel, Button, Image, Tabs } from "antd";
-import { RightOutlined, ArrowRightOutlined } from "@ant-design/icons";
+import { Button, } from "antd";
+import { ArrowRightOutlined } from "@ant-design/icons";
 
 const DazkoPricing = () => {
     const pricingDetail = [{
@@ -69,7 +71,7 @@ const DazkoPricing = () => {
             <div className={styles.priceingDetailes}>
                 {pricingDetail.map((price, i) => {
                     return (
-                        <div>
+                        <div key={i}>
                             <h4>{price.plans} </h4>
                             <h2><span>$</span>{price.price}</h2>
                             {price.training.map((train, i) => {

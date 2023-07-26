@@ -1,23 +1,23 @@
 import React from 'react';
-import { Carousel, Button, Image, Tabs } from "antd";
-import { TwitterOutlined, FacebookOutlined, InstagramOutlined, ArrowRightOutlined } from "@ant-design/icons";
+import Image from 'next/image'
+
 import styles from '../../styles/dazko/DazkoJoinUs.module.css'
 
 const DazkoJoinUs = () => {
     const joinUs = [
         {
-            img: "../..//img/dazko-img/001-fitness.svg",
+            img: "/img/dazko-img/001-fitness.svg",
             head: "FREE FITNESS TRAINING ",
             para: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth."
         },
         {
-            img: "../..//img/dazko-img/002-treadmill.svg",
+            img: "/img/dazko-img/002-treadmill.svg",
             head: "TONS OF CARDIO & STRENGTH",
             para: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth."
 
         },
         {
-            img: "../..//img/dazko-img/003-vip-card.svg",
+            img: "/img/dazko-img/003-vip-card.svg",
             head: "NO COMMENTMENT MEMBERSHIPS",
             para: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth."
 

@@ -1,6 +1,7 @@
 import React from "react"
+import Image from 'next/image'
+
 import styles from '../../styles/dazko/DazkoFooter.module.css'
-import { Carousel, Button, Image, Tabs } from "antd";
 import { BookOutlined, SendOutlined, PhoneOutlined, ArrowRightOutlined } from "@ant-design/icons";
 
 const DazkoFooter = () => {
@@ -21,7 +22,7 @@ const DazkoFooter = () => {
         icon: <SendOutlined />,
         detail: "	info@yourdomain.com  "
     },]
-    const images = ["./img/dazko-img/gallery-1.jpg.webp", "./img/dazko-img/gallery-2.jpg.webp", "./img/dazko-img/gallery-3.jpg.webp", "./img/dazko-img/gallery-4.jpg.webp", "./img/dazko-img/gallery-5.jpg", "./img/dazko-img/gallery-6.jpg.webp", "./img/dazko-img/gallery-7.jpg.webp", "./img/dazko-img/gallery-8.jpg.webp",]
+    const images = ["/img/dazko-img/gallery-1.jpg.webp", "/img/dazko-img/gallery-2.jpg.webp", "/img/dazko-img/gallery-3.jpg.webp", "/img/dazko-img/gallery-4.jpg.webp", "/img/dazko-img/gallery-5.jpg", "/img/dazko-img/gallery-6.jpg.webp", "/img/dazko-img/gallery-7.jpg.webp", "/img/dazko-img/gallery-8.jpg.webp",]
     return (
         <section className={styles.footerSectionContainer}>
             <div className={styles.footerSection}>
