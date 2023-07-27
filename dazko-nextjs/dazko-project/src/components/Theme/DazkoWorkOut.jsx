@@ -59,7 +59,7 @@ const DazkoWorkOut = () => {
                             setActive2(false)
                             setActive3(false)
                         }}>
-                            <img src={work.img} alt="" />
+                            <Image src={work.img} alt="" height={370} width={1200} />
                             <div className={`${styles.workOutClassesDescription} ${work.active ? `${styles.descripActive}` : `${styles.descripInActive}`}`}>{work.descrip} </div>
                             <div className={`${styles.workOutClassesPrice} ${work.active ? `${styles.priceActive}` : `${styles.priceInActive}`}`}>{work.price}</div>
                         </div>

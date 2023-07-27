@@ -47,18 +47,18 @@ const DazkoPricing = () => {
 
     const features = [
         {
-            img: "../..//img/dazko-img/pro-icon-1.png",
+            img: "/img/dazko-img/pro-icon-1.png",
             head: "THOUSANDS OF EQUIPMENTS",
             para: "A small river named Duden flows by their place and supplies it with the necessary regelialia. "
         },
         {
-            img: "../..//img/dazko-img/pro-icon-2.png",
+            img: "/img/dazko-img/pro-icon-2.png",
             head: "OPEN 24/7 DAZKO GYM FITNESS",
             para: "A small river named Duden flows by their place and supplies it with the necessary regelialia."
 
         },
         {
-            img: "../..//img/dazko-img/pro-icon-3.png",
+            img: "/img/dazko-img/pro-icon-3.png",
             head: " FOOD SUPPLEMENTS",
             para: "A small river named Duden flows by their place and supplies it with the necessary regelialia.."
 
@@ -93,7 +93,7 @@ const DazkoPricing = () => {
                     {features.map((feature, i) => {
                         return (
                             <div className={styles.features} key={i}>
-                                <img src={feature.img} alt="" />
+                                <Image src={feature.img} alt="" height={50} width={50} />
                                 <div className={styles.featureDescriptions}>
 
                                     <h2>{feature.head} </h2>

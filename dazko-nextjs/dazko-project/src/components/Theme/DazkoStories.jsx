@@ -13,14 +13,14 @@ const DazkoStories = () => {
 
             <div className={styles.videoContainer}>
                 <div>
-                    <img src="/img/dazko-img/success-1.jpg.webp" alt="" />
+                    <Image src="/img/dazko-img/success-1.jpg.webp" alt="" height={400} width={1200} />
                     <div className={styles.videoDescrip}>
                         <Link href="htttps://vimeo.com/115041822"><PlayCircleOutlined /></Link>
                         <div>From 264 lbs to 154 lbs, A Great transformation in my life.</div>
                     </div>
                 </div>
                 <div>
-                    <img src="/img/dazko-img/success-2.jpg.webp" alt="" />
+                    <Image src="/img/dazko-img/success-2.jpg.webp" alt="" height={400} width={1200} />
                     <div className={styles.videoDescrip}>
                         <Link href="htttps://vimeo.com/115041822"><PlayCircleOutlined /></Link>
                         <div>From 264 lbs to 154 lbs, A Great transformation in my life.</div>

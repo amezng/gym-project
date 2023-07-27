@@ -58,7 +58,7 @@ const DazkoFooter = () => {
                 <div>
                     {images.map((img, i) => {
                         return (
-                            <img key={i} src={img} alt="" />
+                            <Image key={i} src={img} alt="" height={80} width={500} />
                         )
                     })}
                 </div>

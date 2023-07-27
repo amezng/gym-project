@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 import { Carousel } from "antd";
 import styles from '../../styles/dazko/DazkoTestimonial.module.css'
@@ -62,12 +63,12 @@ const DazkoTestimonial = () => {
                         {carouselDetail.map((profile, i) => {
                             return (
                                 <div className={styles.carouselProWraper} key={i}>
-                                    <div className={styles.headerComa}><img src="/img/dazko-img/213175_f10d_icon.png" alt="" /></div>
+                                    <div className={styles.headerComa}><Image src="/img/dazko-img/213175_f10d_icon.png" alt="" height={60} width={60} /></div>
                                     <div key={i} className={`${styles.profileConatiner} `}>
 
                                         <p>{profile.para}</p>
                                         <div>
-                                            <img src={profile.img} alt="" />
+                                            <Image src={profile.img} alt="" height={80} width={80} />
                                             <div>
                                                 <h3>ROGER SCOTT</h3>
                                                 <p>MARKETING MANAGER</p>
@@ -82,12 +83,12 @@ const DazkoTestimonial = () => {
                         {carouselDetail.map((profile, i) => {
                             return (
                                 <div className={styles.carouselProWraper} key={i}>
-                                    <div className={styles.headerComa}><img src="../..//img/dazko-img/213175_f10d_icon.png" alt="" /></div>
+                                    <div className={styles.headerComa}><Image src="/img/dazko-img/213175_f10d_icon.png" alt="" height={60} width={60} /></div>
                                     <div key={i} className={`${styles.profileConatiner} `}>
 
                                         <p>{profile.para}</p>
                                         <div>
-                                            <img src={profile.img} alt="" />
+                                            <Image src={profile.img} alt="" height={80} width={80} />
                                             <div>
                                                 <h3>ROGER SCOTT</h3>
                                                 <p>MARKETING MANAGER</p>
@@ -110,12 +111,12 @@ const DazkoTestimonial = () => {
                         return (
                             <div key={i} className={`${styles.carouselWrapper} `}>
                                 <div>
-                                    <div className={styles.headerComa}><img src="../..//img/dazko-img/213175_f10d_icon.png" alt="" /></div>
+                                    <div className={styles.headerComa}><Image src="/img/dazko-img/213175_f10d_icon.png" alt="" height={60} width={60} /></div>
                                     <div key={i} className={`${styles.profileConatiner} `}>
 
                                         <p>{profile.para}</p>
                                         <div>
-                                            <img src={profile.img} alt="" />
+                                            <Image src={profile.img} alt="" height={80} width={80} />
                                             <div>
                                                 <h3>ROGER SCOTT</h3>
                                                 <p>MARKETING MANAGER</p>

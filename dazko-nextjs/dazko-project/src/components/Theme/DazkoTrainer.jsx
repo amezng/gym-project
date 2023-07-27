@@ -57,12 +57,12 @@ const DazkoTrainer = () => {
             <h4>TRAINER</h4>
             <h1>FITNESS <span>TRAINER</span></h1>
             <div className={styles.trainersProfile}>
-                <img src="/img/dazko-img/bg_5.jpg.webp" alt="" />
+                <Image src="/img/dazko-img/bg_5.jpg.webp" alt="" height={600} width={1200} />
                 <div className={styles.trainerImg}>
                     {trainer.map((trainerImg, i) => {
                         return (
                             <div key={i}>
-                                <img alt="" src={trainerImg.img} className={trainerImg.active ? `${styles.imgActive}` : `${styles.imgInActive}`} onMouseOver={() => {
+                                <Image alt="" height={400} width={1200} src={trainerImg.img} className={trainerImg.active ? `${styles.imgActive}` : `${styles.imgInActive}`} onMouseOver={() => {
                                     imageHover(i)
                                 }} onMouseLeave={onMouseLeave} />
                                 <div className={`${styles.trainerNames} ${trainerImg.active ? `${styles.nameActive}` : `${styles.nameInActive}`} `}>
