@@ -32,7 +32,7 @@ const DazkoJoinUs = () => {
                     joinUs.map((join, i) => {
                         return (
                             <div key={i}>
-                                <Image src={join.img} alt="" height={80} width={1200} />
+                                <Image src={join.img} alt="" height={80} width={100} />
                                 <h3>{join.head}</h3>
                                 <p>{join.para}</p>
                             </div>
