@@ -30,7 +30,7 @@ const DazkoAbout = () => {
         <section className={`${styles.aboutSection} about-container`} >
             <div className={styles.aboutContainer}>
                 <div>
-                    <img src="/img/dazko-img/about.png.webp" alt="" width={'100%'} height={'100%'} />
+                    <Image src="/img/dazko-img/about.png.webp" alt="" width={450} height={100} />
                 </div>
                 <div>
                     <h4>INFORMATION ABOUT US</h4>
